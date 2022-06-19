@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #161616;
+    color: white;
+}
+
+/*------------SIDEMENU------------*/
+header{
+    position:fixed;
+        top:0;
+        left:0;
+    
+    height: 100%;
+    width:220px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    background: #161616;
+}
+
+header>img{
+    padding-left: 8px;
+}
+
+/*------SIDEMENU: items------*/
+.menu-items{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu-items div{
+    display: flex;
+    align-items: center;
+
+    padding:10px;
+    
+    background: #161616;
+    color: white;
+}
+
+.menu-items div:hover{
+    background-color: #80ed9985;
+}
+
+.menu-items div:first-child{
+    background-color: #80ed9985;
+}
+
+.menu-items div a{
+    text-decoration:none;
+    color: white;
+}
+
+.menu-items div img{
+    margin-right: 25px;
+}
+
+.menu-items hr{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border: none;
+}
+
+/*------SIDEMENU: channels------*/
+header h5{
+    font-size: 14px;
+    font-weight: 800;
+    color: #7c7c7c;
+}
+
+.channels img{
+    border-radius: 100%;
+}
+
+/*------------MAIN------------*/
+main{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 100%;
+}
+
+main div{
+    width: 1110px;
+    height: 611px;
+    
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    border-radius: 10px;
+    background: linear-gradient(90deg, #80ED9998, #57CC9998, #38A3A598, #22577A98);
+}
+
+/*------MAIN: nav------*/
+nav {
+    height: 60px;
+    padding: 0 20px;
+    /*background-color: blueviolet;*/
+   }
+
+.search{
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    width: 400px;
+    height: 60px;
+
+    background: none;
+}
+
+.input {
+    width: 400px;
+    height: 40px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    
+    transition: .3s ease;
+
+    border: 2px solid #80ed9956;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 28px;
+    background-color: transparent;
+    color: #161616;
+   }
+   
+.input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+   }
+   
+.input:focus, input:hover {
+    outline: none;
+    border-color: #80ED9957;
+    background-color: #ffffff4f;
+    box-shadow: 0 0 0 4px #16161621;
+   }
+   
+.search img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+        left: 32px;
+}
