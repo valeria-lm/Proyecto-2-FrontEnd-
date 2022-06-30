@@ -90,7 +90,7 @@ main{
     justify-content: flex-end;
 
     width: 1110px;
-    height: 1300px;
+    height: 1400px;
 }
 
 main>div {
@@ -178,17 +178,70 @@ nav {
     background: none;
 }
 
-.multimedia span{
+.multimedia span {
     color: #ffffff79;
     font-size: 10px;
 }
 
+/*--------MUSICA--------*/
 .musica {
     grid-area: musica;
+
+    font-size: 24px;
+    font-weight: 500;
 }
+button {
+    color: #161616;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #161616;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: transparent;
+   }
+   
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #161616;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+   
+button:hover {
+    color: #fff;
+}
+   
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+   
+button:active:before {
+    background: #161616;
+    transition: background 0s;
+}
+
 .musica1 {
     grid-area: musica1;
-    height: 100%;
+    height: 240px;
+    margin-top: 8px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -198,7 +251,8 @@ nav {
 }
 .musica2 {
     grid-area: musica2;
-    height: 100%;
+    height: 240px;
+    margin-top: 8px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -208,7 +262,8 @@ nav {
 }
 .musica3 {
     grid-area: musica3;
-    height: 100%;
+    height: 240px;
+    margin-top: 8px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -218,7 +273,8 @@ nav {
 }
 .musica4 {
     grid-area: musica4;
-    height: 100%;
+    height: 240px;
+    margin-top: 8px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -228,7 +284,8 @@ nav {
 }
 .musica5 {
     grid-area: musica5;
-    height: 100%;
+    height: 240px;
+    margin-top: 8px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -237,13 +294,19 @@ nav {
     padding: 12px 14px 0 14px;
 }
 
+/*--------APRENDIZAJE--------*/
 .aprendizaje {
     grid-area: aprendizaje;
-    margin-top: 50px;
+
+    margin-top: 55px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 500;
 }
 .aprendizaje1 {
     grid-area: aprendizaje1;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -253,7 +316,7 @@ nav {
 }
 .aprendizaje2 {
     grid-area: aprendizaje2;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -263,7 +326,7 @@ nav {
 }
 .aprendizaje3 {
     grid-area: aprendizaje3;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -273,7 +336,7 @@ nav {
 }
 .aprendizaje4 {
     grid-area: aprendizaje4;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -283,7 +346,7 @@ nav {
 }
 .aprendizaje5 {
     grid-area: aprendizaje5;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -292,13 +355,19 @@ nav {
     padding: 12px 14px 0 14px;
 }
 
+/*--------PODCASTS--------*/
 .podcasts {
     grid-area: podcasts;
+
     margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 500;
 }
 .podcasts1 {
     grid-area: podcasts1;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -308,7 +377,7 @@ nav {
 }
 .podcasts2 {
     grid-area: podcasts2;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -318,7 +387,7 @@ nav {
 }
 .podcasts3 {
     grid-area: podcasts3;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -328,7 +397,7 @@ nav {
 }
 .podcasts4 {
     grid-area: podcasts4;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -338,7 +407,7 @@ nav {
 }
 .podcasts5 {
     grid-area: podcasts5;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -347,13 +416,19 @@ nav {
     padding: 12px 14px 0 14px;
 }
 
+/*--------DEPORTE--------*/
 .deporte {
     grid-area: deporte;
+
     margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 500;
 }
 .deporte1 {
     grid-area: deporte1;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -363,7 +438,7 @@ nav {
 }
 .deporte2 {
     grid-area: deporte2;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -373,7 +448,7 @@ nav {
 }
 .deporte3 {
     grid-area: deporte3;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -383,7 +458,7 @@ nav {
 }
 .deporte4 {
     grid-area: deporte4;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -393,7 +468,7 @@ nav {
 }
 .deporte5 {
     grid-area: deporte5;
-    height: 100%;
+    height: 240px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #161616;
@@ -402,7 +477,7 @@ nav {
     padding: 12px 14px 0 14px;
 }
   
-.multimedia img {
+.portada {
     width: 200px;
     height: 130px;
     border-radius: 15px 15px 0 0;
