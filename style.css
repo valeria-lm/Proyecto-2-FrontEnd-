@@ -1,4 +1,7 @@
 body{
+    display: flex;
+    justify-content: flex-end;
+
     margin: 0;
     padding: 0;
 
@@ -8,7 +11,7 @@ body{
 }
 
 /*------------SIDEMENU------------*/
-header{
+aside{
     position:fixed;
         top:0;
         left:0;
@@ -21,7 +24,7 @@ header{
     background: #161616;
 }
 
-header>img{
+aside>img{
     padding-left: 8px;
 }
 
@@ -86,15 +89,13 @@ main{
     display: flex;
     justify-content: flex-end;
 
-    width: 100%;
-    height: 100%;
+    width: 1110px;
+    height: 1300px;
 }
 
-main div{
-    width: 1110px;
-    height: 611px;
-    
-    margin-right: 15px;
+main>div {
+    width: 100%;
+    height: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
     
@@ -106,6 +107,7 @@ main div{
 nav {
     height: 60px;
     padding: 0 20px;
+    margin-bottom: 40px;
     /*background-color: blueviolet;*/
    }
 
@@ -154,3 +156,254 @@ nav {
     position: relative;
         left: 32px;
 }
+
+.multimedia {
+    display: grid; 
+    grid-template-columns: repeat(5, 200px); 
+    grid-template-rows: 40px 240px ; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+        "musica musica musica musica musica"
+        "musica1 musica2 musica3 musica4 musica5"
+        "aprendizaje aprendizaje aprendizaje aprendizaje aprendizaje"
+        "aprendizaje1 aprendizaje2 aprendizaje3 aprendizaje4 aprendizaje5"
+        "podcasts podcasts podcasts podcasts podcasts"
+        "podcasts1 podcasts2 podcasts3 podcasts4 podcasts5"
+        "deporte deporte deporte deporte deporte"
+        "deporte1 deporte2 deporte3 deporte4 deporte5"; 
+
+    margin-right: 20px;
+    padding-left: 20px;
+
+    background: none;
+}
+
+.multimedia span{
+    color: #ffffff79;
+    font-size: 10px;
+}
+
+.musica {
+    grid-area: musica;
+}
+.musica1 {
+    grid-area: musica1;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.musica1 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.musica2 {
+    grid-area: musica2;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.musica2 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.musica3 {
+    grid-area: musica3;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.musica3 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.musica4 {
+    grid-area: musica4;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.musica4 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.musica5 {
+    grid-area: musica5;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.musica5 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+
+.aprendizaje {
+    grid-area: aprendizaje;
+    margin-top: 50px;
+}
+.aprendizaje1 {
+    grid-area: aprendizaje1;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.aprendizaje1 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.aprendizaje2 {
+    grid-area: aprendizaje2;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.aprendizaje2 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.aprendizaje3 {
+    grid-area: aprendizaje3;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.aprendizaje3 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.aprendizaje4 {
+    grid-area: aprendizaje4;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.aprendizaje4 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.aprendizaje5 {
+    grid-area: aprendizaje5;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.aprendizaje5 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+
+.podcasts {
+    grid-area: podcasts;
+    margin-top: 50px;
+}
+.podcasts1 {
+    grid-area: podcasts1;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.podcasts1 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.podcasts2 {
+    grid-area: podcasts2;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.podcasts2 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.podcasts3 {
+    grid-area: podcasts3;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.podcasts3 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.podcasts4 {
+    grid-area: podcasts4;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.podcasts4 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.podcasts5 {
+    grid-area: podcasts5;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.podcasts5 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+
+.deporte {
+    grid-area: deporte;
+    margin-top: 50px;
+}
+.deporte1 {
+    grid-area: deporte1;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.deporte1 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.deporte2 {
+    grid-area: deporte2;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.deporte2 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.deporte3 {
+    grid-area: deporte3;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.deporte3 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.deporte4 {
+    grid-area: deporte4;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.deporte4 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+.deporte5 {
+    grid-area: deporte5;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #161616;
+}
+.deporte5 div:nth-child(2){
+    padding: 12px 14px 0 14px;
+}
+  
+.multimedia img {
+    width: 200px;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+}   
