@@ -957,13 +957,11 @@ button:active:before {
 
 .deporte5 div:nth-child(2){
     padding: 12px 14px 0 14px;
-}
-  
-.portada {
-    width: 200px;
-    height: 130px;
+}  
+
+iframe {
     border-radius: 10px 10px 0 0;
-}   
+}
 
 /*--------------LOADER.html--------------*/
 .loader {
