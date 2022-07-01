@@ -118,13 +118,31 @@ nav {
     padding: 0 20px;
     margin-bottom: 60px;
     /*background-color: blueviolet;*/
-   }
+}
+
+.nav-icons {
+    width: 200px;
+    position: absolute;
+        top: 35px;
+        left: 1150px;
+}
+
+.nav-icons img {
+    margin-left: 20px;
+}
+
+nav hr {
+    width: 1058px;
+    position: relative;
+        top:-30px;
+    color: #fafafa60;
+}
 
 .search{
     display: flex;
     align-items: center;
 
-    margin: 0;
+    padding-top: 5px;
     width: 400px;
     height: 60px;
 
@@ -166,12 +184,15 @@ nav {
 }
 
 .voice {
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     position: relative;
         left: 420px;
-        top: -41px;
+        top: -48px;
     cursor: pointer;
+    background-color: #1616168a;
+    border-radius: 100%;
+    padding: 8px;
 }
 
 .voice:hover {
@@ -218,7 +239,7 @@ nav {
     width: 136px;
     position: relative;
         top: -32px;
-        left: 950px;
+        left: 936px;
 }
 
 .btn {
@@ -482,7 +503,7 @@ nav {
     width: 136px;
     position: relative;
         top: -32px;
-        left: 950px;
+        left: 948px;
 }
 
 button {
@@ -649,7 +670,7 @@ button:active:before {
     width: 136px;
     position: relative;
         top: -32px;
-        left: 950px;
+        left: 948px;
 }
 
 button {
@@ -815,7 +836,7 @@ button:active:before {
     width: 136px;
     position: relative;
         top: -32px;
-        left: 950px;
+        left: 948px;
 }
 
 button {
