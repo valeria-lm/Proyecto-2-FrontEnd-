@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,58 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
+
 <body>
     <aside>
         <img src="images/menu.png" width="30px" height="30px">
-            <div class="menu-items">
-                <div>
-                    <img src="images/home.png" width="22px" height="22px">
-                    <a href='#'>Inicio</a>
-                </div>
-                <div>
-                    <img src="images/rocket.png" width="22px" height="22px">
-                    <a href='#'>Explorar</a>
-                </div>
-                <div>
-                    <img src="images/users.png" width="22px" height="22px">
-                    <a href='#'>Suscripciones</a>
-                </div>
-                <hr>
-                <div>
-                    <img src="images/videos.png" width="22px" height="22px">
-                    <a href='#'>Biblioteca</a>
-                </div>
-                <div>
-                    <img src="images/history.png" width="22px" height="22px">
-                    <a href='#'>Historial</a>
-                </div>
-                <div>
-                    <img src="images/video-camera.png" width="22px" height="22px">
-                    <a href='#'>Mis videos</a>
-                </div>
-                <div>
-                    <img src="images/clock.png" width="22px" height="22px">
-                    <a href='#'>Ver más tarde</a>
-                </div>
-                <div>
-                    <img src="images/like.png" width="22px" height="22px">
-                    <a href='#'>Videos que me gustan</a>
-                </div>
-                <div>
-                    <img src="images/arrow.png" width="22px" height="22px">
-                    <a href='#'>Mostrar más</a>
-                </div>
-                <hr>
-
-                <h5>SUSCRIPCIONES</h5>
-                <div class="channels">
-                    <img src="images/tzuzul-code.jpg" width="22px" height="22px">
-                    Tzuzul Code
-                </div>
+        <div class="menu-items">
+            <div>
+                <img src="images/home.png" width="22px" height="22px">
+                <a href='#'>Inicio</a>
             </div>
-        </aside>
-    
+            <div>
+                <img src="images/rocket.png" width="22px" height="22px">
+                <a href='#'>Explorar</a>
+            </div>
+            <div>
+                <img src="images/users.png" width="22px" height="22px">
+                <a href='#'>Suscripciones</a>
+            </div>
+            <hr>
+            <div>
+                <img src="images/videos.png" width="22px" height="22px">
+                <a href='#'>Biblioteca</a>
+            </div>
+            <div>
+                <img src="images/history.png" width="22px" height="22px">
+                <a href='#'>Historial</a>
+            </div>
+            <div>
+                <img src="images/video-camera.png" width="22px" height="22px">
+                <a href='#'>Mis videos</a>
+            </div>
+            <div>
+                <img src="images/clock.png" width="22px" height="22px">
+                <a href='#'>Ver más tarde</a>
+            </div>
+            <div>
+                <img src="images/like.png" width="22px" height="22px">
+                <a href='#'>Videos que me gustan</a>
+            </div>
+            <div>
+                <img src="images/arrow.png" width="22px" height="22px">
+                <a href='#'>Mostrar más</a>
+            </div>
+            <hr>
+
+            <h5>SUSCRIPCIONES</h5>
+            <div class="channels">
+                <img src="images/tzuzul-code.jpg" width="22px" height="22px">
+                Tzuzul Code
+            </div>
+        </div>
+    </aside>
+
     <main>
         <div>
             <nav>
@@ -65,18 +67,22 @@
                     <img src="images/search.png">
                     <input placeholder="Buscar" type="search" class="input">
                 </div>
+                <img class="voice" src="images/voice.png">
             </nav>
 
             <div class="multimedia">
                 <div class="musica">
                     Música
-                    <button>
-                        Ver más
-                        <img src="images/arrow-right.png">
-                    </button>
+                    <div>
+                        <a href="loader.html" class="btn">
+                            Ver más
+                            <img src="images/arrow-right.png">
+                        </a>
+                        
+                    </div>
                 </div>
                 <div class="musica1">
-                    <div><img class="portada" src="images/daft-punk.png"></div>
+                    <div><iframe src="https://www.youtube.com/embed/CCHdMIEGaaM?rel=0" style="width: 100%; border: 0; height: 130px;" allowfullscreen scrolling="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe></div>
                     <div>
                         <span>Daft Punk</span><br>
                         Daft Punk - Get Lucky (Official Audio) ft. Pha...<br>
@@ -116,7 +122,15 @@
                     </div>
                 </div>
 
-                <div class="aprendizaje">Aprendizaje</div>
+                <div class="aprendizaje">
+                    Aprendizaje
+                    <div>
+                        <button>
+                            Ver más
+                            <img src="images/arrow-right.png">
+                        </button>
+                    </div>
+                </div>
                 <div class="aprendizaje1">
                     <div><img class="portada" src="images/historia1.png"></div>
                     <div>
@@ -157,8 +171,16 @@
                         <span>2,2M views - 4 years ago</span>
                     </div>
                 </div>
-                
-                <div class="podcasts">Podcasts</div>
+
+                <div class="podcasts">
+                    Podcasts
+                    <div>
+                        <button>
+                            Ver más
+                            <img src="images/arrow-right.png">
+                        </button>
+                    </div>
+                </div>
                 <div class="podcasts1">
                     <div><img class="portada" src="images/podcast1.png"></div>
                     <div>
@@ -197,10 +219,18 @@
                         <span>Daft Punk</span><br>
                         Inteligencia Emocional - Podcast 53<br>
                         <span>475.529 views - 4 years ago</span>
-                    </div>              
+                    </div>
                 </div>
-                
-                <div class="deporte">Deportes</div>
+
+                <div class="deporte">
+                    Deportes
+                    <div>
+                        <button>
+                            Ver más
+                            <img src="images/arrow-right.png">
+                        </button>
+                    </div>
+                </div>
                 <div class="deporte1">
                     <div><img class="portada" src="images/podcast1.png"></div>
                     <div>
@@ -239,16 +269,15 @@
                         <span>Daft Punk</span><br>
                         Inteligencia Emocional - Podcast 53<br>
                         <span>475.529 views - 4 years ago</span>
-                    </div>              
+                    </div>
                 </div>
-                
-                
-                </div> 
-               
-            </div> 
+            </div>
+
         </div>
-        
+        </div>
+
     </main>
 
 </body>
+
 </html>
