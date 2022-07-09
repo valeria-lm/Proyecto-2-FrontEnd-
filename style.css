@@ -1,22 +1,31 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
 
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 
     font-family: Roboto, Arial, sans-serif;
     background-color: #161616;
     color: white;
 }
 
+
+
 /*------------SIDEMENU------------*/
 aside{
-    
+/*     
     position:fixed;
         top:0;
         left:0;
-    
+     */
     height: 100%;
     width:220px;
     padding-left: 20px;
@@ -95,11 +104,11 @@ header h5 {
 
 /*------------MAIN------------*/
 main {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
 
-    width: 1110px;
-    height: 1500px;
+    /* width: 1110px;
+    height: 1500px; */
 }
 
 main>div {
@@ -113,23 +122,50 @@ main>div {
 }
 
 /*------MAIN: nav------*/
-nav {
-    height: 60px;
-    padding: 0 20px;
-    margin-bottom: 60px;
-    /*background-color: blueviolet;*/
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0;
 }
+
+@media (min-width: 720px) {
+    .nav {
+        flex-direction: row;
+    };
+}
+
+
+/* .nav {
+    height: 60px;
+    padding: 0.5rem;
+    /* margin-bottom: 60px; */
+    /*background-color: blueviolet;*/
+    /* margin-top: 1rem;
+ */
 
 .nav-icons {
-    width: 200px;
+    /* display: flex; */
+    /* width: 200px;
     position: absolute;
         top: 35px;
-        left: 1150px;
+        left: 1150px; */
 }
 
-.nav-icons img {
-    margin-left: 20px;
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
+
+.icon:not(:last-of-type){
+    margin-right: 1rem;
+}
+
+/* .nav-icons img {
+    margin-left: 20px;
+} */
 
 nav hr {
     width: 1058px;
@@ -138,7 +174,9 @@ nav hr {
     color: #fafafa60;
 }
 
-.search{
+/* SEARCH */
+
+/* .search{
     display: flex;
     align-items: center;
 
@@ -194,11 +232,62 @@ nav hr {
     border-radius: 100%;
     padding: 8px;
 }
+ */
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.input-search {
+    width: 25rem;
+    height: 2.5rem;
+    padding-left: 1rem;    
+    transition: .3s ease;
+    border: 2px solid #80ed9956;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 28px;
+    background-color: #16161631;
+    color: #161616;
+}
+
+.input-search::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.input-search:focus,
+.input-search:hover {
+    outline: none;
+    border-color: #80ED9957;
+    background-color: #ffffff4f;
+    box-shadow: 0 0 0 4px #16161621;
+}
+
+.icon-search {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: -34px;
+}
+
+.voice {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: #1616168a;
+    border-radius: 100%;
+    padding: 8px;
+}
 
 .voice:hover {
     transform: scale(1.2,1.2);
     transition: 0.5s all;
 }
+
+/* SEARCH */
 
 .multimedia {
     display: grid; 
@@ -226,7 +315,17 @@ nav hr {
     font-size: 10px;
 }
 
+.main-multimedia {
+    padding: 0 1rem;
+}
+
 /*----------------MUSICA----------------*/
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .musica {
     grid-area: musica;
 
@@ -305,7 +404,18 @@ nav hr {
 }
 
 /*--------5 videos música--------*/
-.musica1 {
+.card {
+    height: 15rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 20px, rgba(0, 0, 0, 0.4) 0px 6px 6px;
+    background-color: #161616;
+}
+
+.card-title {
+    padding: 0.5rem;
+}
+/* .musica1 {
     grid-area: musica1;
     height: 240px;
     margin-top: 8px;
@@ -393,7 +503,7 @@ nav hr {
 
 .musica5 div:nth-child(2){
     padding: 12px 14px 0 14px;
-}
+} */
 
 /*-----------MUSIC.html-----------*/
 .musica6 {
@@ -568,7 +678,7 @@ button:active:before {
 }
 
 /*--------5 videos aprendizaje--------*/
-.aprendizaje1 {
+/* .aprendizaje1 {
     grid-area: aprendizaje1;
     height: 240px;
     border-radius: 10px;
@@ -651,10 +761,10 @@ button:active:before {
 
 .aprendizaje5 div:nth-child(2){
     padding: 12px 14px 0 14px;
-}
+} */
 
-/*--------PODCASTS--------*/
-.podcasts {
+/*--------PODCASTS--------
+ .podcasts {
     grid-area: podcasts;
 
     height: 40px;
@@ -663,10 +773,10 @@ button:active:before {
 
     font-size: 24px;
     font-weight: 500;
-}
+} */
 
 /*--------Botón--------*/
-.podcasts div {
+/* .podcasts div {
     width: 136px;
     position: relative;
         top: -32px;
@@ -732,10 +842,10 @@ button:hover:before {
 button:active:before {
     background: #161616;
     transition: background 0s;
-}
+} */
 
 /*--------5 videos podcasts--------*/
-.podcasts1 {
+/* .podcasts1 {
     grid-area: podcasts1;
     height: 240px;
     border-radius: 10px;
@@ -817,10 +927,10 @@ button:active:before {
 
 .podcasts5 div:nth-child(2){
     padding: 12px 14px 0 14px;
-}
+} */
 
 /*--------DEPORTE--------*/
-.deporte {
+/* .deporte {
     grid-area: deporte;
 
     height: 40px;
@@ -829,10 +939,10 @@ button:active:before {
 
     font-size: 24px;
     font-weight: 500;
-}
+} */
 
 /*--------Botón--------*/
-.deporte div {
+/* .deporte div {
     width: 136px;
     position: relative;
         top: -32px;
@@ -898,10 +1008,10 @@ button:hover:before {
 button:active:before {
     background: #161616;
     transition: background 0s;
-}
+} */
 
 /*--------5 videos deportes--------*/
-.deporte1 {
+/*.deporte1 {
     grid-area: deporte1;
     height: 240px;
     border-radius: 10px;
@@ -985,7 +1095,7 @@ button:active:before {
 .deporte5 div:nth-child(2){
     padding: 12px 14px 0 14px;
 }  
-
+*/
 iframe {
     border-radius: 10px 10px 0 0;
 }
@@ -1057,4 +1167,32 @@ iframe {
 .multimedia-musica span {
     color: #ffffff79;
     font-size: 10px;
+}
+
+/* EXTRAS */
+
+.cantainer {
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.grid-multimedia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 720px) {
+    .grid-multimedia {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-multimedia {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
